@@ -1,5 +1,5 @@
 import os
-from Ques_2.ClientClass import obj1
+from ClientClass import obj1
 
 s3_client = obj1.s3_client
 

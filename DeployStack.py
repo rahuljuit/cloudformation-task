@@ -1,4 +1,4 @@
-from Ques_2.ClientClass import obj1
+from ClientClass import obj1
 from botocore.exceptions import ClientError
 from botocore.exceptions import ParamValidationError
 

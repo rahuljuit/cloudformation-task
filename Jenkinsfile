@@ -4,8 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 withAWS(credentials: '834c7752-4341-49d1-a00c-b5244f88e3ac	', region: 'ap-south-1') {
-                cfnUpdate(stack:'mys3lambdastack', file:'Infrastructure.yaml')
-                s3Upload(file:'pattern.py', bucket:'task1-input-bucket', path:'pattern.py')
+                bat 'C:/Users/Rahul/AppData/Local/Programs/Python/Python37-32/python.exe C:/Users/Rahul/PycharmProjects/boto3demo/Ques_2/Executable.py'
                 }
             }
         }

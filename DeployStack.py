@@ -19,7 +19,7 @@ def create_template_stack(stack_name):
     try:
         cf_client.create_stack(
             StackName=stack_name,
-            TemplateBody=parse_template('Infrastructure.yaml'),
+            TemplateBody=parse_template('C:/Users/Rahul/PycharmProjects/boto3demo/Ques_2/Infrastructure.yaml'),
             Capabilities=[
                 'CAPABILITY_IAM', 'CAPABILITY_NAMED_IAM'
             ]
@@ -31,7 +31,7 @@ def create_template_stack(stack_name):
             try:
                 cf_client.update_stack(
                     StackName=stack_name,
-                    TemplateBody=parse_template('Infrastructure.yaml'),
+                    TemplateBody=parse_template('C:/Users/Rahul/PycharmProjects/boto3demo/Ques_2/Infrastructure.yaml'),
                     Capabilities=[
                         'CAPABILITY_IAM', 'CAPABILITY_NAMED_IAM'
                     ])

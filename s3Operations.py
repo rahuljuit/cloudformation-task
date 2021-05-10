@@ -18,11 +18,16 @@ def create_s3_bucket(bucket1, loc):
 
 
 def upload_zip_files(bucket1):
-    for file in os.listdir():
+    path = 'C:/Users/Rahul/PycharmProjects/boto3demo/Ques_2/'
+    path = os.fsencode(path)
+    for file in os.listdir(path):
+        file = file.decode('utf-8')
         if '.zip' in file:
             upload_to_bucket = bucket1
             upload_to_bucket_dir = str(file)
-            s3_client.upload_file(file, upload_to_bucket, upload_to_bucket_dir)
+            path_file = path+file.encode('utf-8')
+            print(path_file)
+            s3_client.upload_file(path_file.decode('utf-8'), upload_to_bucket, upload_to_bucket_dir)
 
 
 def put_object_in_s3_bucket(filename, bucket1):

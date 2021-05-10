@@ -1,4 +1,4 @@
-What is Scripting language?
+hdbkchdksWhat is Scripting language?
 -> Scripting language is the one which allows communication with the already existing application.
 
 What is Programming language?
@@ -9,3 +9,4 @@ Browsers are responsible to interpret scripting language.
 
 Why Javascript?
 -> it makes HTML that gets rendered on the browser, dynamic and interactive.
+This was my change from github
